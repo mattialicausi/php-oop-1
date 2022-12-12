@@ -1,7 +1,7 @@
 <?php
 
 // includo Cast.php
-include_once __DIR__ . '/Models/Cast.php';
+include_once __DIR__ . '/Cast.php';
 
 // classe Movie
 class Movie {
@@ -21,7 +21,7 @@ class Movie {
 
 
     // struttura della classe Movie
-    function __construct(String $_title, String $_genres, String $_description = null, $_releaseDate, String $_image = null, String $_video = null) 
+    function __construct(String $_title, String $_genres, String $_description = null, $_releaseDate, String $_image = null, String $_video = null, Cast $_cast) 
     {
         $this->title = $_title;
         $this->genres = $_genres;
@@ -29,6 +29,8 @@ class Movie {
         $this->releaseDate = $_releaseDate;
         $this->image = $_image;
         $this->video = $_video;
+
+        $this->cast = $_cast;
     }
 }
 

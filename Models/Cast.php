@@ -15,10 +15,11 @@ class Cast {
     function __construct(String $_name, String $_surname, $_yearsOld, String $_role, String $_image = null, String $_nationality)
     {
         $this->name = $_name;
-        $this->name = $_yearsOld;
-        $this->name = $_role;
-        $this->name = $_image;
-        $this->name = $_nationality;
+        $this->surname = $_surname;
+        $this->yearsOld = $_yearsOld;
+        $this->role = $_role;
+        $this->image = $_image;
+        $this->nationality = $_nationality;
     }
 
 
